@@ -6,3 +6,4 @@ chromadb
 tiktoken
 pysqlite3-binary
 pysqlite3
+streamlit-extras
