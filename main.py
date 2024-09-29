@@ -10,6 +10,8 @@ from langchain.chains import RetrievalQA
 import streamlit as st
 import tempfile
 import os
+from streamlit_extras.buy_me_a_coffee import button
+
 
 ## 제목
 st.title("ChatPDF")
@@ -61,3 +63,5 @@ if uploaded_file is not None:
             qa_chain = RetrievalQA.from_chain_type(llm, retriever=db.as_retriever())
             response = qa_chain({"query": question})
             st.write(response["result"])
+
+button(username="victor001", floating=False, width=221)
